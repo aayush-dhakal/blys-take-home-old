@@ -19,5 +19,8 @@ app.post("/api/verify", (req, res) => {
 });
 
 app.use(express.static("frontend/build"));
+app.get("*", (req, res) =>
+  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+);
 
 module.exports = app;
