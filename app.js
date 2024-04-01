@@ -16,6 +16,4 @@ app.post("/api/verify", (req, res) => {
 
 app.use(express.static("frontend/build"));
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+module.exports = app;
