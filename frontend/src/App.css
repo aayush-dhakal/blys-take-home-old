@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+input {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 40px;
+  background-color: #100249;
+  color: #ffffff;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: blue;
+}
+
+.input-error {
+  color: red;
+  border-color: red;
+}
