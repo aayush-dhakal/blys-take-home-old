@@ -4,6 +4,10 @@ const PORT = process.env.PORT || 5000;
 const app = express();
 app.use(express.json());
 
+app.get("/api", (req, res) => {
+  return res.json({ message: "api working" });
+});
+
 app.post("/api/verify", (req, res) => {
   const { code } = req.body;
 
