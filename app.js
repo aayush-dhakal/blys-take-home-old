@@ -1,6 +1,5 @@
 const express = require("express");
 
-const PORT = process.env.PORT || 5000;
 const app = express();
 app.use(express.json());
 
@@ -20,7 +19,7 @@ app.post("/api/verify", (req, res) => {
 
 app.use(express.static("frontend/build"));
 app.get("*", (req, res) =>
-  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+  res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"))
 );
 
 module.exports = app;
